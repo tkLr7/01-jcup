@@ -1,0 +1,15 @@
+import java_cup.runtime.*;
+
+terminal INTEIRO, MAIS, MENOS, PTVIRG;
+
+non terminal inicio, expr;
+
+start with inicio;
+
+inicio ::= expr PTVIRG
+         ;
+
+expr ::= INTEIRO MAIS expr
+       | INTEIRO MENOS expr
+       | INTEIRO
+       ;
