@@ -50,8 +50,8 @@ start with inicio;
 inicio ::= expr PTVIRG
          ;
 
-expr ::= INTEIRO MAIS expr
-       | INTEIRO MENOS expr
+expr ::= expr MAIS INTEIRO
+       | expr MENOS INTEIRO
        | INTEIRO
        ;
 ```
