@@ -3,6 +3,7 @@ import java_cup.runtime.Symbol;
 %%
 
 %cup
+%class Calculadora
 
 digito = [0-9]
 inteiro = {digito}+
